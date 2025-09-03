@@ -1,0 +1,173 @@
+/* Default Theme Variables */
+:root {
+  --bg: #f9fafb;
+  --text: #111827;
+  --card-bg: #f3f4f6;
+  --section-bg: #fff;
+  --footer-bg: #111827;
+  --footer-text: #f9fafb;
+}
+
+/* 🌙 Dark Theme */
+:root.dark {
+  --bg: #111827;
+  --text: #e5e7eb;
+  --card-bg: #374151;
+  --section-bg: #1f2937;
+  --footer-bg: #0f172a;
+  --footer-text: #cbd5e1;
+}
+
+/* 🌞 Light Theme */
+:root.light {
+  --bg: #f9fafb;
+  --text: #111827;
+  --card-bg: #f3f4f6;
+  --section-bg: #fff;
+  --footer-bg: #111827;
+  --footer-text: #f9fafb;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--section-bg);
+  border-bottom: 1px solid #ccc;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #facc15;
+}
+
+/* Toggle button */
+.toggle-btn {
+  background: transparent;
+  border: 2px solid #facc15;
+  color: #facc15;
+  padding: 0.4rem 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #facc15;
+  color: #111;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #111;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #facc15;
+  color: #111;
+}
+
+/* Features */
+.features {
+  padding: 2rem;
+  text-align: center;
+  background: var(--section-bg);
+}
+
+.features h2 {
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 200px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 2rem;
+  background: var(--section-bg);
+  text-align: center;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  border-left: 4px solid #facc15;
+  padding-left: 1rem;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+}
