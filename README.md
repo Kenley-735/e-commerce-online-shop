@@ -32,8 +32,7 @@ ecommerce-store/
 
 Clone the repository:
 
-git clone https://kenley-735.github.io/e-commerce-online-shop/.git
-
+git clone https://kenley-735.github.io/e-commerce-online-shop/
 
 Open index.html in your browser.
 
